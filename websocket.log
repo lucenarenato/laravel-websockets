@@ -1,0 +1,23 @@
+
+   RuntimeException  : Failed to listen on "tcp://0.0.0.0:8090": Address already in use
+
+  at /var/www/temporarios/laravel-websockets-demo-master/vendor/react/socket/src/TcpServer.php:164
+    160|             \STREAM_SERVER_BIND | \STREAM_SERVER_LISTEN,
+    161|             \stream_context_create(array('socket' => $context))
+    162|         );
+    163|         if (false === $this->master) {
+  > 164|             throw new \RuntimeException('Failed to listen on "' . $uri . '": ' . $errstr, $errno);
+    165|         }
+    166|         \stream_set_blocking($this->master, false);
+    167| 
+    168|         $this->resume();
+
+  Exception trace:
+
+  1   React\Socket\TcpServer::__construct("tcp://0.0.0.0:8090", Object(React\EventLoop\StreamSelectLoop), [])
+      /var/www/temporarios/laravel-websockets-demo-master/vendor/react/socket/src/Server.php:36
+
+  2   React\Socket\Server::__construct("0.0.0.0:8090", Object(React\EventLoop\StreamSelectLoop))
+      /var/www/temporarios/laravel-websockets-demo-master/vendor/cboden/ratchet/src/Ratchet/Server/IoServer.php:59
+
+  Please use the argument -v to see more details.
