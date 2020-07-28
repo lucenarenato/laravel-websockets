@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "49f2cf7b42bf16973ed5dc7435ff1534",
+    "content-hash": "8d4bb5ae8c0528c7c6879a2676e6470f",
     "packages": [
         {
             "name": "beyondcode/laravel-websockets",
@@ -228,6 +228,72 @@
             "time": "2020-07-03T10:43:43+00:00"
         },
         {
+            "name": "composer/ca-bundle",
+            "version": "1.2.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/ca-bundle.git",
+                "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/95c63ab2117a72f48f5a55da9740a3273d45b7fd",
+                "reference": "95c63ab2117a72f48f5a55da9740a3273d45b7fd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "ext-pcre": "*",
+                "php": "^5.3.2 || ^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || 6.5 - 8",
+                "psr/log": "^1.0",
+                "symfony/process": "^2.5 || ^3.0 || ^4.0 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\CaBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
+            "keywords": [
+                "cabundle",
+                "cacert",
+                "certificate",
+                "ssl",
+                "tls"
+            ],
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-04-08T08:27:21+00:00"
+        },
+        {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "v0.1.1",
             "source": {
@@ -259,6 +325,286 @@
             ],
             "description": "implementation of xdg base directory specification for php",
             "time": "2019-12-04T15:06:13+00:00"
+        },
+        {
+            "name": "doctrine/cache",
+            "version": "1.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/cache.git",
+                "reference": "13e3381b25847283a91948d04640543941309727"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/cache/zipball/13e3381b25847283a91948d04640543941309727",
+                "reference": "13e3381b25847283a91948d04640543941309727",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.1 || ^8.0"
+            },
+            "conflict": {
+                "doctrine/common": ">2.2,<2.4"
+            },
+            "require-dev": {
+                "alcaeus/mongo-php-adapter": "^1.1",
+                "doctrine/coding-standard": "^6.0",
+                "mongodb/mongodb": "^1.1",
+                "phpunit/phpunit": "^7.0",
+                "predis/predis": "~1.0"
+            },
+            "suggest": {
+                "alcaeus/mongo-php-adapter": "Required to use legacy MongoDB driver"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\Cache\\": "lib/Doctrine/Common/Cache"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                }
+            ],
+            "description": "PHP Doctrine Cache library is a popular cache implementation that supports many different drivers such as redis, memcache, apc, mongodb and others.",
+            "homepage": "https://www.doctrine-project.org/projects/cache.html",
+            "keywords": [
+                "abstraction",
+                "apcu",
+                "cache",
+                "caching",
+                "couchdb",
+                "memcached",
+                "php",
+                "redis",
+                "xcache"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fcache",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-07-07T18:54:01+00:00"
+        },
+        {
+            "name": "doctrine/dbal",
+            "version": "2.10.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/dbal.git",
+                "reference": "aab745e7b6b2de3b47019da81e7225e14dcfdac8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/aab745e7b6b2de3b47019da81e7225e14dcfdac8",
+                "reference": "aab745e7b6b2de3b47019da81e7225e14dcfdac8",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/cache": "^1.0",
+                "doctrine/event-manager": "^1.0",
+                "ext-pdo": "*",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "jetbrains/phpstorm-stubs": "^2019.1",
+                "nikic/php-parser": "^4.4",
+                "phpstan/phpstan": "^0.12",
+                "phpunit/phpunit": "^8.4.1",
+                "symfony/console": "^2.0.5|^3.0|^4.0|^5.0",
+                "vimeo/psalm": "^3.11"
+            },
+            "suggest": {
+                "symfony/console": "For helpful console commands such as SQL execution and import of files."
+            },
+            "bin": [
+                "bin/doctrine-dbal"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.10.x-dev",
+                    "dev-develop": "3.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\DBAL\\": "lib/Doctrine/DBAL"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                }
+            ],
+            "description": "Powerful PHP database abstraction layer (DBAL) with many features for database schema introspection and management.",
+            "homepage": "https://www.doctrine-project.org/projects/dbal.html",
+            "keywords": [
+                "abstraction",
+                "database",
+                "db2",
+                "dbal",
+                "mariadb",
+                "mssql",
+                "mysql",
+                "oci8",
+                "oracle",
+                "pdo",
+                "pgsql",
+                "postgresql",
+                "queryobject",
+                "sasql",
+                "sql",
+                "sqlanywhere",
+                "sqlite",
+                "sqlserver",
+                "sqlsrv"
+            ],
+            "funding": [
+                {
+                    "url": "https://www.doctrine-project.org/sponsorship.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/phpdoctrine",
+                    "type": "patreon"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/doctrine%2Fdbal",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-04-20T17:19:26+00:00"
+        },
+        {
+            "name": "doctrine/event-manager",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/doctrine/event-manager.git",
+                "reference": "629572819973f13486371cb611386eb17851e85c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/doctrine/event-manager/zipball/629572819973f13486371cb611386eb17851e85c",
+                "reference": "629572819973f13486371cb611386eb17851e85c",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1"
+            },
+            "conflict": {
+                "doctrine/common": "<2.9@dev"
+            },
+            "require-dev": {
+                "doctrine/coding-standard": "^6.0",
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Doctrine\\Common\\": "lib/Doctrine/Common"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Guilherme Blanco",
+                    "email": "guilhermeblanco@gmail.com"
+                },
+                {
+                    "name": "Roman Borschel",
+                    "email": "roman@code-factory.org"
+                },
+                {
+                    "name": "Benjamin Eberlei",
+                    "email": "kontakt@beberlei.de"
+                },
+                {
+                    "name": "Jonathan Wage",
+                    "email": "jonwage@gmail.com"
+                },
+                {
+                    "name": "Johannes Schmitt",
+                    "email": "schmittjoh@gmail.com"
+                },
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                }
+            ],
+            "description": "The Doctrine Event Manager is a simple PHP event system that was built to be used with the various Doctrine projects.",
+            "homepage": "https://www.doctrine-project.org/projects/event-manager.html",
+            "keywords": [
+                "event",
+                "event dispatcher",
+                "event manager",
+                "event system",
+                "events"
+            ],
+            "time": "2019-11-10T09:48:07+00:00"
         },
         {
             "name": "doctrine/inflector",
@@ -733,6 +1079,55 @@
             "time": "2020-06-23T01:36:47+00:00"
         },
         {
+            "name": "geoip/geoip",
+            "version": "v1.17",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/maxmind/geoip-api-php.git",
+                "reference": "2053a85c2ed3e7adcbaf0117e26832f57366e370"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/maxmind/geoip-api-php/zipball/2053a85c2ed3e7adcbaf0117e26832f57366e370",
+                "reference": "2053a85c2ed3e7adcbaf0117e26832f57366e370",
+                "shasum": ""
+            },
+            "conflict": {
+                "ext-geoip": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "1.0.*"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/geoip.inc",
+                    "src/geoipcity.inc",
+                    "src/timezone.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL 2.1+"
+            ],
+            "authors": [
+                {
+                    "name": "MaxMind, Inc.",
+                    "email": "support@maxmind.com",
+                    "homepage": "http://www.maxmind.com/"
+                }
+            ],
+            "description": "MaxMind GeoIP PHP API",
+            "homepage": "http://dev.maxmind.com/geoip/legacy/downloadable",
+            "keywords": [
+                "geoip",
+                "geolocation",
+                "maxmind"
+            ],
+            "time": "2016-05-16T19:06:50+00:00"
+        },
+        {
             "name": "guzzlehttp/guzzle",
             "version": "6.5.5",
             "source": {
@@ -1104,6 +1499,134 @@
             "time": "2018-09-29T18:48:56+00:00"
         },
         {
+            "name": "jaybizzle/crawler-detect",
+            "version": "v1.2.96",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JayBizzle/Crawler-Detect.git",
+                "reference": "5a53c78644c54a628c3f5ead915c35b489c92239"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/5a53c78644c54a628c3f5ead915c35b489c92239",
+                "reference": "5a53c78644c54a628c3f5ead915c35b489c92239",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8|^5.5|^6.5",
+                "satooshi/php-coveralls": "1.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jaybizzle\\CrawlerDetect\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Beech",
+                    "email": "m@rkbee.ch",
+                    "role": "Developer"
+                }
+            ],
+            "description": "CrawlerDetect is a PHP class for detecting bots/crawlers/spiders via the user agent",
+            "homepage": "https://github.com/JayBizzle/Crawler-Detect/",
+            "keywords": [
+                "crawler",
+                "crawler detect",
+                "crawler detector",
+                "crawlerdetect",
+                "php crawler detect"
+            ],
+            "time": "2020-06-14T20:37:24+00:00"
+        },
+        {
+            "name": "jenssegers/agent",
+            "version": "v2.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jenssegers/agent.git",
+                "reference": "daa11c43729510b3700bc34d414664966b03bffe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jenssegers/agent/zipball/daa11c43729510b3700bc34d414664966b03bffe",
+                "reference": "daa11c43729510b3700bc34d414664966b03bffe",
+                "shasum": ""
+            },
+            "require": {
+                "jaybizzle/crawler-detect": "^1.2",
+                "mobiledetect/mobiledetectlib": "^2.7.6",
+                "php": ">=5.6"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^5.0|^6.0|^7.0"
+            },
+            "suggest": {
+                "illuminate/support": "Required for laravel service providers"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Jenssegers\\Agent\\AgentServiceProvider"
+                    ],
+                    "aliases": {
+                        "Agent": "Jenssegers\\Agent\\Facades\\Agent"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jenssegers\\Agent\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jens Segers",
+                    "homepage": "https://jenssegers.com"
+                }
+            ],
+            "description": "Desktop/mobile user agent parser with support for Laravel, based on Mobiledetect",
+            "homepage": "https://github.com/jenssegers/agent",
+            "keywords": [
+                "Agent",
+                "browser",
+                "desktop",
+                "laravel",
+                "mobile",
+                "platform",
+                "user agent",
+                "useragent"
+            ],
+            "funding": [
+                {
+                    "url": "https://github.com/jenssegers",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/jenssegers/agent",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-13T08:05:20+00:00"
+        },
+        {
             "name": "laravel/framework",
             "version": "v5.8.38",
             "source": {
@@ -1403,6 +1926,58 @@
                 }
             ],
             "time": "2020-05-18T15:13:39+00:00"
+        },
+        {
+            "name": "mobiledetect/mobiledetectlib",
+            "version": "2.8.34",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/serbanghita/Mobile-Detect.git",
+                "reference": "6f8113f57a508494ca36acbcfa2dc2d923c7ed5b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/6f8113f57a508494ca36acbcfa2dc2d923c7ed5b",
+                "reference": "6f8113f57a508494ca36acbcfa2dc2d923c7ed5b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8.35||~5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "Mobile_Detect.php"
+                ],
+                "psr-0": {
+                    "Detection": "namespaced/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Serban Ghita",
+                    "email": "serbanghita@gmail.com",
+                    "homepage": "http://mobiledetect.net",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
+            "homepage": "https://github.com/serbanghita/Mobile-Detect",
+            "keywords": [
+                "detect mobile devices",
+                "mobile",
+                "mobile detect",
+                "mobile detector",
+                "php mobile detect"
+            ],
+            "time": "2019-09-18T18:44:20+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -1884,6 +2459,190 @@
                 }
             ],
             "time": "2020-07-20T17:29:33+00:00"
+        },
+        {
+            "name": "pragmarx/datatables",
+            "version": "v1.4.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antonioribeiro/laravel4-datatables-package.git",
+                "reference": "142631346d01c074248b80c8bc55fdfea255e23e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antonioribeiro/laravel4-datatables-package/zipball/142631346d01c074248b80c8bc55fdfea255e23e",
+                "reference": "142631346d01c074248b80c8bc55fdfea255e23e",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": ">=4.0.0",
+                "illuminate/filesystem": ">=4.0.0",
+                "illuminate/support": ">=4.0.0",
+                "illuminate/view": ">=4.0.0",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "laravel/laravel": ">=4.0.0",
+                "mockery/mockery": "0.7.2",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/migrations"
+                ],
+                "psr-0": {
+                    "Bllim\\Datatables": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bilal Gultekin",
+                    "email": "bilal@bilal.im"
+                }
+            ],
+            "description": "Server-side handler of DataTables Jquery Plugin for Laravel 4",
+            "keywords": [
+                "datatable",
+                "datatables",
+                "datatables jquery plugin",
+                "laravel",
+                "laravel4"
+            ],
+            "time": "2019-09-13T13:59:39+00:00"
+        },
+        {
+            "name": "pragmarx/support",
+            "version": "0.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antonioribeiro/support.git",
+                "reference": "62cbb56e67c22e95c330ad16bd7f122fe8f1fdc4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antonioribeiro/support/zipball/62cbb56e67c22e95c330ad16bd7f122fe8f1fdc4",
+                "reference": "62cbb56e67c22e95c330ad16bd7f122fe8f1fdc4",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/filesystem": "~4.0|~5.0|~6.0|~7.0",
+                "php": ">=5.4.0",
+                "symfony/var-dumper": "~2.6|~3.0|~4.0|~5.0"
+            },
+            "suggest": {
+                "laravel/framework": "Laravel framework.",
+                "symfony/yaml": "The Yaml class needs it"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.7.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PragmaRX\\Support\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Carlos Ribeiro",
+                    "email": "acr@antoniocarlosribeiro.com",
+                    "role": "Creator"
+                }
+            ],
+            "description": "PragmaRX components support package",
+            "keywords": [
+                "laravel",
+                "pragmarx"
+            ],
+            "time": "2020-03-29T16:57:47+00:00"
+        },
+        {
+            "name": "pragmarx/tracker",
+            "version": "v4.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/antonioribeiro/tracker.git",
+                "reference": "8118a70c5f87943f110731d95a5aa1cb670e5709"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/antonioribeiro/tracker/zipball/8118a70c5f87943f110731d95a5aa1cb670e5709",
+                "reference": "8118a70c5f87943f110731d95a5aa1cb670e5709",
+                "shasum": ""
+            },
+            "require": {
+                "doctrine/dbal": "^2.6",
+                "jaybizzle/crawler-detect": "~1.0",
+                "jenssegers/agent": "~2.1",
+                "laravel/framework": "~5|~6|~7",
+                "php": ">=7.0",
+                "pragmarx/datatables": "^1.4.12",
+                "pragmarx/support": "~0.6|~0.7|~0.8|~0.9",
+                "psr/log": "~1.0",
+                "ramsey/uuid": "^3 || ^4",
+                "snowplow/referer-parser": "~0.1",
+                "ua-parser/uap-php": "~3.4"
+            },
+            "require-dev": {
+                "mockery/mockery": "~0.8"
+            },
+            "suggest": {
+                "geoip/geoip": "~1.14",
+                "geoip2/geoip2": "~2.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "PragmaRX\\Tracker\\Vendor\\Laravel\\ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Tracker": "PragmaRX\\Tracker\\Vendor\\Laravel\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PragmaRX\\Tracker\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Antonio Carlos Ribeiro",
+                    "email": "acr@antoniocarlosribeiro.com",
+                    "role": "Creator & Designer"
+                }
+            ],
+            "description": "A Laravel Visitor Tracker",
+            "keywords": [
+                "laravel",
+                "logging",
+                "mobile detection",
+                "pragmarx",
+                "tracker",
+                "tracking",
+                "user agent",
+                "visitor"
+            ],
+            "time": "2020-05-04T18:30:05+00:00"
         },
         {
             "name": "predis/predis",
@@ -2914,6 +3673,46 @@
             "time": "2018-05-29T20:21:04+00:00"
         },
         {
+            "name": "snowplow/referer-parser",
+            "version": "0.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/snowplow/referer-parser.git",
+                "reference": "5ce872b60999c63039723959a45928ef1196f03d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/snowplow/referer-parser/zipball/5ce872b60999c63039723959a45928ef1196f03d",
+                "reference": "5ce872b60999c63039723959a45928ef1196f03d",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.*",
+                "symfony/yaml": "*"
+            },
+            "suggest": {
+                "symfony/yaml": "Support for YAML configuration file"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Snowplow\\RefererParser": "php/src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lars Strojny",
+                    "email": "lars@strojny.net"
+                }
+            ],
+            "description": "Snowplow Refer(r)er parser for PHP",
+            "time": "2016-01-29T16:43:00+00:00"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v6.2.3",
             "source": {
@@ -3008,6 +3807,85 @@
             ],
             "description": "IDE help files for Swoole.",
             "time": "2020-05-28T19:17:49+00:00"
+        },
+        {
+            "name": "swooletw/laravel-swoole",
+            "version": "v2.6.67",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/swooletw/laravel-swoole.git",
+                "reference": "2271aa7fbd881d932ecca46749a609c36e15cf93"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/swooletw/laravel-swoole/zipball/2271aa7fbd881d932ecca46749a609c36e15cf93",
+                "reference": "2271aa7fbd881d932ecca46749a609c36e15cf93",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "~5.4|~6.0|~7.0",
+                "illuminate/contracts": "~5.4|~6.0|~7.0",
+                "illuminate/http": "~5.4|~6.0|~7.0",
+                "illuminate/support": "~5.4|~6.0|~7.0",
+                "php": "^7.2",
+                "predis/predis": "^1.1"
+            },
+            "require-dev": {
+                "codedungeon/phpunit-result-printer": "^0.14.0",
+                "laravel/lumen-framework": "~5.4|~6.0|~7.0",
+                "mockery/mockery": "~1.0",
+                "php-coveralls/php-coveralls": "^2.1",
+                "php-mock/php-mock": "^2.0",
+                "phpunit/php-code-coverage": "^6.1",
+                "phpunit/phpunit": "^7.5",
+                "swoole/ide-helper": "@dev"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SwooleTW\\Http\\LaravelServiceProvider"
+                    ],
+                    "aliases": {
+                        "Server": "SwooleTW\\Http\\Server\\Facades\\Server",
+                        "Table": "SwooleTW\\Http\\Server\\Facades\\Table",
+                        "Room": "SwooleTW\\Http\\Websocket\\Facades\\Room",
+                        "Websocket": "SwooleTW\\Http\\Websocket\\Facades\\Websocket"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/Server/helpers.php"
+                ],
+                "psr-4": {
+                    "SwooleTW\\Http\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Albert Chen",
+                    "email": "albert@unisharp.com"
+                },
+                {
+                    "name": "Huang Yi",
+                    "email": "coodeer@163.com"
+                }
+            ],
+            "description": "High performance HTTP server based on Swoole. Speed up your Laravel and Lumen applications.",
+            "keywords": [
+                "http",
+                "laravel",
+                "lumen",
+                "performance",
+                "server",
+                "swoole"
+            ],
+            "time": "2020-03-29T09:13:36+00:00"
         },
         {
             "name": "symfony/console",
@@ -5096,6 +5974,63 @@
             "description": "CssToInlineStyles is a class that enables you to convert HTML-pages/files into HTML-pages/files with inline styles. This is very useful when you're sending emails.",
             "homepage": "https://github.com/tijsverkoyen/CssToInlineStyles",
             "time": "2020-07-13T06:12:54+00:00"
+        },
+        {
+            "name": "ua-parser/uap-php",
+            "version": "v3.9.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ua-parser/uap-php.git",
+                "reference": "fde0bd76ebd21cebfabc90a3a0d927754cb4f739"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ua-parser/uap-php/zipball/fde0bd76ebd21cebfabc90a3a0d927754cb4f739",
+                "reference": "fde0bd76ebd21cebfabc90a3a0d927754cb4f739",
+                "shasum": ""
+            },
+            "require": {
+                "composer/ca-bundle": "^1.1",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7 || ^8 || ^9",
+                "symfony/console": "^3.4 || ^4.3 || ^5.0",
+                "symfony/filesystem": "^3.4 || ^4.3 || ^5.0",
+                "symfony/finder": "^3.4 || ^4.3 || ^5.0",
+                "symfony/yaml": "^3.4 || ^4.3 || ^5.0"
+            },
+            "suggest": {
+                "symfony/console": "Required for CLI usage - ^3.4 || ^4.3 || ^5.0",
+                "symfony/filesystem": "Required for CLI usage - ^3.4 || ^4.3 || ^5.0",
+                "symfony/finder": "Required for CLI usage - ^3.4 || ^4.3 || ^5.0",
+                "symfony/yaml": "Required for CLI usage - ^3.4 || ^4.3 || ^5.0"
+            },
+            "bin": [
+                "bin/uaparser"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "UAParser\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dave Olsen",
+                    "email": "dmolsen@gmail.com"
+                },
+                {
+                    "name": "Lars Strojny",
+                    "email": "lars@strojny.net"
+                }
+            ],
+            "description": "A multi-language port of Browserscope's user agent parser.",
+            "time": "2020-04-28T08:09:42+00:00"
         },
         {
             "name": "vlucas/phpdotenv",

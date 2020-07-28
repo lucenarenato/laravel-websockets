@@ -55,3 +55,10 @@ window.Echo = new Echo({
     wsPort: 6001,
     disableStats: true,
 });
+
+// window.Echo = new Echo({
+//     broadcaster: 'pusher',
+//     key: '51aaa8133b2080a29f6d',
+//     cluster: 'mt1',
+//     encrypted: true
+// });

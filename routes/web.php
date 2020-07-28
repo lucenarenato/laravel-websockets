@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('search/transcribe', 'SearchController@transcribeVoice');
+
 Route::get('/socket.io', 'SocketIOController@upgrade');
 Route::post('/socket.io', 'SocketIOController@ok');
 

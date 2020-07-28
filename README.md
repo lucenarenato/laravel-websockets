@@ -2,6 +2,9 @@
 
 # Web sockets made easy with Laravel and Ratchet
 
+## Laravel Stats Tracker
+
+
 This is a demo application built with the [Laravel WebSockets](https://github.com/beyondcode/laravel-websockets) package.
 
 Be sure to check out the [official documentation](https://docs.beyondco.de/laravel-websockets/).
@@ -29,3 +32,5 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 - https://medium.com/@mohyaddinalaoddin/web-sockets-made-easy-with-laravel-and-ratchet-149a0e63a74f
 - https://github.com/Askedio/laravel-ratchet
 - http://socketo.me/docs/sessions
+- https://github.com/swooletw/laravel-swoole
+- https://github.com/antonioribeiro/tracker#installing
